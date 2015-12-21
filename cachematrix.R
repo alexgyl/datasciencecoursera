@@ -2,6 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
+# The first function, makeVector creates a special "vector", which is really a list containing a function to
+# 1. set the value of the vector
+# 2. get the value of the vector
+# 3. set the inverted matrix
+# 4. get the inverted matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -19,6 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+# The following function calculates the inverted matrix of the special "vector"
+# It checks if the inverted matrix exists first, if it does, it skips the calculation
+# If not, the matrix is inverted and cached via the setInv function
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
